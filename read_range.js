@@ -1,3 +1,5 @@
+
+
 const range = document.getElementById("values");
 
 range.oninput = () => {
