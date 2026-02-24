@@ -1,5 +1,7 @@
 
+addEventListener("DOMContentLoaded", () => {
+    const range = document.getElementById("values");
 
-const range = document.getElementById("values");
+    console.log(range.value)
 
-console.log(range.value)
+});
