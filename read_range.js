@@ -15,13 +15,31 @@ client.on("error", (err) => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const range = document.getElementById("values");
+    const q1 = document.getElementById("q1");
+    const q2 = document.getElementById("q2");
+    const q3 = document.getElementById("q3");
 
-    range.oninput = () => {
-        console.log(range.value)
+    q1.oninput = () => {
+        console.log("q1:",q1.value);
 
         if(client.connected){
-            client.publish("q1",range.value)
+            client.publish("q1",q1.value);
+        }
+    }
+
+    q2.oninput = () => {
+        console.log("q2:",q2.value);
+
+        if(client.connected){
+            client.publish("q2",q2.value);
+        }
+    }
+
+    q3.oninput = () => {
+        console.log("q3:",q3.value);
+
+        if(client.connected){
+            client.publish("q3",q3.value);
         }
     }
 
